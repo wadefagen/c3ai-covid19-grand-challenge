@@ -6,6 +6,13 @@ This repo contains the source code for Team 91-DIVOC's submission to the [C3.ai 
 
 Throughout the world, areas of high-frequency surveillance testing for COVID-19 have emerged in small, tightly-knit communities such as university campuses.  For the c3.ai grand challenge, we created a new, public dataset with daily COVID-19 testing statistics of all Big Ten University COVID-19 testing programs; used the C3.ai Data Lake to gather time-series data on county, state, and national-levels; and employed a neural network to accurately predict the new cases of COVID-19 within the full county communities of The University of Illinois, Purdue University, and The Ohio State University with minimal error up to seven days into the future.
 
+## Sample Results
+
+This image is one of the results presented in our paper (Figure 2), created from the data in `combined_results/computed-predictions-Ohio State.csv`:
+
+![Results for OSU](https://github.com/wadefagen/c3ai-covid19-grand-challenge/blob/main/img/osu.png)
+
+
 ## Source Code
 
 The source code for this submission is made up of six files that create a data pipeline.  Each file runs independently, but depends on output created by the sequentially numbered previous file.
@@ -30,10 +37,3 @@ python 03-state-level.py
 python 04-predict.py  # Trains an LSTM model, very slow
 python 05-combine-prediction-runs.py
 ```
-
-## Sample Results
-
-The following image appears in Figure 2 in our paper, created from the data in `combined_results/computed-predictions-Ohio State.csv`:
-
-![Results for OSU](https://github.com/wadefagen/c3ai-covid19-grand-challenge/blob/main/img/osu.png)
-
