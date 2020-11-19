@@ -1,10 +1,12 @@
-# C3.ai Grand Challenge Submission (91-DIVOC)
+# C3.ai COVID-19 Grand Challenge Submission (91-DIVOC)
 
 This repo contains the source code for Team 91-DIVOC's submission to the [C3.ai Grand Challenge](https://c3.ai/c3-ai-covid-19-grand-challenge/) by Wade Fagen-Ulmschneider and Karle Flanagan.
+
 
 ## Abstract
 
 Throughout the world, areas of high-frequency surveillance testing for COVID-19 have emerged in small, tightly-knit communities such as university campuses.  For the c3.ai grand challenge, we created a new, public dataset with daily COVID-19 testing statistics of all Big Ten University COVID-19 testing programs; used the C3.ai Data Lake to gather time-series data on county, state, and national-levels; and employed a neural network to accurately predict the new cases of COVID-19 within the full county communities of The University of Illinois, Purdue University, and The Ohio State University with minimal error up to seven days into the future.
+
 
 ## Sample Results
 
