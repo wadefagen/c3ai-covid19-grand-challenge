@@ -1,3 +1,10 @@
+#
+# Data Pipeline Piece #4: LSTM Model
+# - Input: Formatted university, county, and state data, with populations, via `03`
+# - Output: LSTM Prediction Outputs
+#
+
+
 import pandas as pd
 from numpy import array
 import numpy as np

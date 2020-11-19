@@ -1,3 +1,10 @@
+#
+# Data Pipeline Piece #5: Data Formatting
+# - Input: LSTM Prediction Outputs
+# - Output: `combined_results` for further analysis (CSV files)
+#
+
+
 import pandas as pd
 
 from os import listdir
