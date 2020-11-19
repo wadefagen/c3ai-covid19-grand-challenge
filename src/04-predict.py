@@ -150,14 +150,14 @@ def run(university, dateCutoffString):
     date = rollForwardDate(date)
 
   df_result = pd.DataFrame(data)
-  df_result.to_csv(f'results/{university}_{dateCutoffString}.csv', index=False)
+  df_result.to_csv(f'../results/{university}_{dateCutoffString}.csv', index=False)
 
 
 
 #for uni in ["Illinois"]:
 for uni in ["UW-Madison", "Ohio State", "Purdue", "Illinois"]:
   curDate = "2020-10-14"
-  while curDate < "2020-10-23":
+  while curDate < "2020-11-15":
     print(f"{uni} @ {curDate}")
     run(uni, curDate)
     curDate = rollForwardDate(curDate)

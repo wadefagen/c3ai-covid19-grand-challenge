@@ -9,7 +9,7 @@
 
 import os
 
-path = 'data-cache/'  # csse_covid_19_daily_reports
+path = 'data-cache\\COVID-19\\csse_covid_19_data\\csse_covid_19_daily_reports'
 
 stateTranslation = [
   ['Arizona', 'AZ'], ['Alabama', 'AL'], ['Alaska', 'AK'], ['Arkansas', 'AR'], ['California', 'CA'],
@@ -44,7 +44,7 @@ def processDate(fileName):
   print(date)
 
 
-  df = pd.read_csv(path + dateFileName + ".csv")
+  df = pd.read_csv( os.path.join(path, dateFileName + ".csv"))
   if "Admin2" not in df:
     return None
 

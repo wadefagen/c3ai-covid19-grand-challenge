@@ -12,11 +12,11 @@ df = pd.read_csv("county-and-college-v2.csv")
 df["KeyValue"] = df["Province_State"] + " @ " + df["Date"]
 df.set_index("KeyValue", inplace=True)
 
-path = 'data-cache/'  # csse_covid_19_daily_reports_us
+path = 'data-cache\\COVID-19\\csse_covid_19_data\\csse_covid_19_daily_reports_us'
 
 
 def processUSDailyReport(date):
-  df = pd.read_csv(path + date + ".csv")
+  df = pd.read_csv(os.path.join(path, date + ".csv"))
 
   if 'Total_Test_Results' in df:
     df = df.rename(columns={

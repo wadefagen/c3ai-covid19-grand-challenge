@@ -12,7 +12,7 @@ import pandas as pd
 import os
 
 # BigTen Data:
-df = pd.read_csv("../website/pages/covid-19-at-big-ten-conference-schools/data/data-daily.csv")
+df = pd.read_csv("data-cache\\college-covid19-dataset\\data\daily.csv")
 
 
 df = df.rename(columns={

@@ -36,7 +36,7 @@ for university in universityResults:
   df = universityResults[university]
   cols = sorted(list(df.columns.values))
   df = df[ cols ]
-  df.to_csv(f"combined_results/v2_{university}.csv")
+  df.to_csv(f"../combined_results/v2_{university}.csv")
 
 
 
@@ -111,7 +111,7 @@ for university in universityResults:
     curDate = rollForwardDate(curDate, 1)
 
   # Raw Results:
-  pd.DataFrame(df_data).to_csv(f"combined_results/computed-predictions-{university}.csv")
+  pd.DataFrame(df_data).to_csv(f"../combined_results/computed-predictions-{university}.csv")
 
   # For Graphs:
   curDate = "2020-11-01"
@@ -141,5 +141,5 @@ for university in universityResults:
 
   labels = sorted(labels, reverse=True)
   labels.insert(0, "Date")
-  pd.DataFrame(df_chart).to_csv(f"combined_results/chart-{university}.csv", columns=labels)
+  pd.DataFrame(df_chart).to_csv(f"../combined_results/chart-{university}.csv", columns=labels)
 
